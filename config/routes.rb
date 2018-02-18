@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  root 'application#home'
-
   resources :tasks
   get '/types', to: 'types#index', as: 'types'
   get '/types/:id', to: 'types#show', as: 'type'
