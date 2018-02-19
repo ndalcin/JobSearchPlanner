@@ -602,3 +602,70 @@ No serializer found for resource: #<Type id: 1, name: "blogging">
 Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-18 15:18:33 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ndalcin/.rvm/gems/ruby-2.3.3/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ndalcin/.rvm/gems/ruby-2.3.3/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api" for 127.0.0.1 at 2018-02-18 15:18:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-18 15:18:48 -0500
+Processing by Api::TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.6ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.86ms)
+Completed 200 OK in 88ms (Views: 78.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-18 15:18:52 -0500
+Processing by Api::TypesController#index as HTML
+  [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (0.19ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/types/1" for 127.0.0.1 at 2018-02-18 15:18:57 -0500
+Processing by Api::TypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Type (0.18ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tasks/1" for 127.0.0.1 at 2018-02-18 15:19:01 -0500
+Processing by Api::TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered TaskSerializer with ActiveModelSerializers::Adapter::Attributes (1.79ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+

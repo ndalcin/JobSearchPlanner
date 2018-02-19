@@ -1,4 +1,4 @@
-class TypesController < ApplicationController
+class Api::TypesController < ApplicationController
   # GET /types
   def index
     @types = Type.all
@@ -9,7 +9,7 @@ class TypesController < ApplicationController
   # GET /types/1
   def show
     @type = Type.find(params[:id])
-    
+
     render json: @type
   end
 
