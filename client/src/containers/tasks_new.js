@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class TaskNew extends Component {
+class TasksNew extends Component {
 
   render() {
     return (
@@ -9,4 +9,4 @@ class TaskNew extends Component {
   }
 }
 
-export default TaskNew;
+export default TasksNew;
