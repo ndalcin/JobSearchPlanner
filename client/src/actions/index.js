@@ -10,7 +10,7 @@ export function fetchTasks() {
     fetch(`${ROOT_URL}/tasks`)
       .then(response => response.json())
       .then(json => {
-        dispatch({type: RECEIVED_TASKS, payload: json.tasks})
+        dispatch({type: RECEIVED_TASKS, payload: json})
       })
   };
 }
