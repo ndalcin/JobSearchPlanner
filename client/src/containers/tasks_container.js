@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { fetchTasks } from '../actions/index';
 import TaskItem from '../components/task_item';
 
-class TasksIndex extends Component {
+class TasksContainer extends Component {
   componentDidMount = () => {
     this.props.fetchTasks();
   }
 
   render() {
+    const { tasks } = this.props;
+
     return (
       <div>
-        Tasks Index
+        Tasks Container
       </div>
     );
   };
@@ -24,8 +25,4 @@ function mapStateToProps(state) {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchTasks }, dispatch);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(TasksIndex);
+export default connect(mapStateToProps, { fetchTasks })(TasksContainer);
