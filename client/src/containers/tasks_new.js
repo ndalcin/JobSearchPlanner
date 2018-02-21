@@ -4,7 +4,9 @@ class TasksNew extends Component {
 
   render() {
     return (
-      NEW TASk!
+      <div>
+        NEW TASk
+      </div>
     )
   }
 }

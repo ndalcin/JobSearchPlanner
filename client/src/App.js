@@ -9,8 +9,8 @@ class App extends Component {
       return (
         <Router>
           <div className="app">
-            <Route path="/" component={ TasksContainer } />
-            <Route path="/tasks/new" component={ TasksNew } />
+            <Route exact path="/" component={ TasksContainer } />
+            <Route exact path="/tasks/new" component={ TasksNew } />
           </div>
         </Router>
       );
