@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import TasksContainer from './containers/tasks_container';
+import TasksIndex from './containers/tasks_index';
 import TasksNew from './containers/tasks_new';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
           <div className="app">
             <Switch>
               <Route path="/tasks/new" component={ TasksNew } />
-              <Route path="/" component={ TasksContainer } />
+              <Route path="/" component={ TasksIndex } />
             </Switch>
           </div>
         </Router>
