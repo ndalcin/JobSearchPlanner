@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createTask } from '../actions';
 
 class TasksNew extends Component {
 
   renderField(field){
     //destructuring to pull off meta from field object
     const { meta } = field;
-    const className = `form-group ${meta.touched && meta.error ? 'has-danger': '' }`;
+    const className = `form-group ${meta.touched && meta.error ? 'has-danger': ''}`;
 
     return (
       <div className={className}>
@@ -25,9 +27,8 @@ class TasksNew extends Component {
   }
   // touched state occurs when the field has been focused on and then tabbed away
 
-
   onSubmit(values) {
-    console.log(values);
+    this.props.createTask(values)
   }
 
   render() {
@@ -72,4 +73,6 @@ function validate(values){
 export default reduxForm({
   validate,
   form: 'TasksNewForm'
-})(TasksNew);
+})(
+  connect(null,{ createTask })(TasksNew)
+);

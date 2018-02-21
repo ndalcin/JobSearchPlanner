@@ -1496,3 +1496,251 @@ Processing by Api::TasksController#index as */*
 Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-21 10:06:55 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (3.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.22ms)
+Completed 200 OK in 70ms (Views: 59.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-21 10:10:00 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.77ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-21 10:10:15 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (15.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.46ms)
+Completed 200 OK in 49ms (Views: 32.7ms | ActiveRecord: 16.0ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:24:30 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"Testing post to API", "description"=>"please work", "task"=>{"name"=>"Testing post to API", "description"=>"please work"}}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 400 Bad Request in 91ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:28:00 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"test", "description"=>"test", "task"=>{"name"=>"test", "description"=>"test"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Completed 400 Bad Request in 11ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:28:22 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"blah", "description"=>"blah", "task"=>{"name"=>"blah", "description"=>"blah"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 400 Bad Request in 5ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:31:45 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"test", "description"=>"test", "task"=>{"name"=>"test", "description"=>"test"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 400 Bad Request in 8ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:41:58 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"blah name", "description"=>"blah desc", "task"=>{"name"=>"blah name", "description"=>"blah desc"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 48930ms (ActiveRecord: 4.5ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/tasks_controller.rb:24:in `create'
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:44:14 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"blah name", "description"=>"blah desc", "task"=>{"name"=>"blah name", "description"=>"blah desc"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 16741ms (ActiveRecord: 0.7ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/tasks_controller.rb:24:in `create'
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:47:48 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"test", "description"=>"test", "task"=>{"name"=>"test", "description"=>"test"}}
+  [1m[35m (2.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.02ms)
+Completed 400 Bad Request in 178ms (Views: 48.3ms | ActiveRecord: 9.7ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 10:49:48 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"test", "description"=>"test", "task"=>{"name"=>"test", "description"=>"test"}}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (10.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "test"], ["description", "test"], ["created_at", "2018-02-21 15:49:48.833265"], ["updated_at", "2018-02-21 15:49:48.833265"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.24ms)
+Completed 200 OK in 149ms (Views: 37.8ms | ActiveRecord: 20.2ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 11:16:04 -0500
+Processing by Api::TasksController#create as */*
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: task):
+  
+app/controllers/api/tasks_controller.rb:56:in `task_params'
+app/controllers/api/tasks_controller.rb:22:in `create'
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 11:19:20 -0500
+Processing by Api::TasksController#create as */*
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: task):
+  
+app/controllers/api/tasks_controller.rb:56:in `task_params'
+app/controllers/api/tasks_controller.rb:22:in `create'
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 11:23:55 -0500
+Processing by Api::TasksController#create as */*
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: task):
+  
+app/controllers/api/tasks_controller.rb:56:in `task_params'
+app/controllers/api/tasks_controller.rb:22:in `create'
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 11:35:02 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"Testing", "description"=>"Test", "task"=>{"name"=>"Testing", "description"=>"Test"}}
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Testing"], ["description", "Test"], ["created_at", "2018-02-21 16:35:02.955017"], ["updated_at", "2018-02-21 16:35:02.955017"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.12ms)
+Completed 200 OK in 69ms (Views: 13.5ms | ActiveRecord: 7.6ms)
+
+
+  [1m[36mTask Load (2.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" ORDER BY "tasks"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" ORDER BY "tasks"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 4]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2018-02-21 18:25:05 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ndalcin/.rvm/gems/ruby-2.3.3/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ndalcin/.rvm/gems/ruby-2.3.3/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (12.4ms)
+Completed 200 OK in 49ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-02-21 18:25:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-21 18:25:11 -0500
+Processing by Api::TasksController#index as HTML
+  [1m[36mTask Load (2.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.61ms)
+Completed 200 OK in 113ms (Views: 106.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-21 18:25:21 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ndalcin/.rvm/gems/ruby-2.3.3/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ndalcin/.rvm/gems/ruby-2.3.3/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (6.7ms)
+Completed 200 OK in 33ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-21 18:25:23 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (5.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.04ms)
+Completed 200 OK in 53ms (Views: 39.7ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 18:35:51 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"ug", "description"=>"ug", "task"=>{"name"=>"ug", "description"=>"ug"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ug"], ["description", "ug"], ["created_at", "2018-02-21 23:35:51.647031"], ["updated_at", "2018-02-21 23:35:51.647031"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.64ms)
+Completed 200 OK in 20ms (Views: 6.7ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-21 18:37:05 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"trying", "description"=>"again", "task"=>{"name"=>"trying", "description"=>"again"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "trying"], ["description", "again"], ["created_at", "2018-02-21 23:37:05.339724"], ["updated_at", "2018-02-21 23:37:05.339724"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.31ms)
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" ORDER BY "tasks"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" ORDER BY "tasks"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 6]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" LIMIT ?[0m  [["LIMIT", 11]]
