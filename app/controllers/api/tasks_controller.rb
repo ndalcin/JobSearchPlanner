@@ -1,4 +1,4 @@
-class Api::TasksController < ApplicationController
+class Api::TasksController < ApiController
   before_action :set_task, only: [:show, :update, :destroy]
 
   # GET /tasks
@@ -10,32 +10,39 @@ class Api::TasksController < ApplicationController
 
   # GET /tasks/1
   def show
-    render json: @task
+    if @task
+     render json: { staus: "success", task: @task }, status: 200
+    else
+     render json: { status: "error", message: "Resource not found." }, status: 404
+    end
   end
 
   # POST /tasks
   def create
     @task = Task.new(task_params)
-
     if @task.save
-      render json: @task, status: :created, location: @task
+      render json: { status: "success", task: @task }, status: 200
     else
-      render json: @task.errors, status: :unprocessable_entity
+      render json: { status: "error", message: @task.errors }, status: 400
     end
   end
 
   # PATCH/PUT /tasks/1
   def update
     if @task.update(task_params)
-      render json: @task
+      render json: @task, status: 200
     else
-      render json: @task.errors, status: :unprocessable_entity
+      render json: { message: @task.errors }, status: 400
     end
   end
 
   # DELETE /tasks/1
   def destroy
-    @task.destroy
+    if @task.destroy
+      render status: 204
+    else
+      render json: { message: "Unable to remove this task." }, status: 404
+    end
   end
 
   private

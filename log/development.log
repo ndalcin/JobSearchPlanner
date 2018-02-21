@@ -1013,3 +1013,31 @@ Processing by Api::TasksController#index as */*
 Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/api/types" for 127.0.0.1 at 2018-02-20 19:07:08 -0500
+Processing by Api::TypesController#index as HTML
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (0.53ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "types" ("name") VALUES (?)[0m  [["name", "email"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-20 19:08:37 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"Jobbook Email", "description"=>"Intro email with Antoine (CEO of Jobbook) from Kevin (2U) connection", "type_id"=>"2", "task"=>{"name"=>"Jobbook Email", "description"=>"Intro email with Antoine (CEO of Jobbook) from Kevin (2U) connection", "type_id"=>"2"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "type_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jobbook Email"], ["description", "Intro email with Antoine (CEO of Jobbook) from Kevin (2U) connection"], ["type_id", 2], ["created_at", "2018-02-21 00:08:37.327873"], ["updated_at", "2018-02-21 00:08:37.327873"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `task_url' for #<Api::TasksController:0x007f8c18a77f78>
+Did you mean?  task_params):
+  
+app/controllers/api/tasks_controller.rb:21:in `create'
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" LIMIT ?[0m  [["LIMIT", 11]]
