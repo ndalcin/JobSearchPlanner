@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import TasksIndex from './containers/tasks_index';
 import TasksNew from './containers/tasks_new';
 import NavBar from './components/navbar';
+import TasksShow from './containers/tasks_show';
 
 class App extends Component {
   render() {
@@ -16,8 +17,9 @@ class App extends Component {
             <div className="routes">
               <NavBar />
               <Switch>
-                <Route path="/tasks/new" component={ TasksNew } />
-                <Route path="/" component={ TasksIndex } />
+                <Route exact path="/tasks/new" component={ TasksNew } />
+                <Route path="/tasks/:id" component={ TasksShow } />
+                <Route exact path="/" component={ TasksIndex } />
               </Switch>
             </div>
           </Router>
