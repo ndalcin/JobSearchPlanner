@@ -3184,3 +3184,14 @@ Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
 ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=1):
   
 app/controllers/api/tasks_controller.rb:51:in `set_task'
+Started GET "/api/tasks/1" for 127.0.0.1 at 2018-02-22 10:10:49 -0500
+Processing by Api::TasksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Task with 'id'=1):
+  
+app/controllers/api/tasks_controller.rb:51:in `set_task'
