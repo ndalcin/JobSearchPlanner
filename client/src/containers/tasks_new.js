@@ -27,8 +27,10 @@ class TasksNew extends Component {
   }
   // touched state occurs when the field has been focused on and then tabbed away
 
-  onSubmit(values) {
-    this.props.createTask(values)
+  onSubmit(values) {    
+    this.props.createTask(values, () => {
+      this.props.history.push('/');
+    });
   }
 
   render() {
