@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchTask } from '../actions';
+import { fetchTask, deleteTask } from '../actions';
+import { Link } from 'react-router-dom';
 
 class TasksShow extends Component {
 
   componentDidMount() {
-    this.props.fetchTask(this.props.match.params.id);
+    const { id } = this.props.match.params
+    if (!this.props.task) { // if the user is coming from the index page, we don't need to refetch the post because it already exists in state
+      this.props.fetchTask(id);
+    }
+  }
+
+  onDeleteClick(){
+    const { id } = this.props.match.params
+    this.props.deleteTask(id); // action creater- deleteTask - needs id of task to send over
   }
 
   render() {
@@ -17,6 +26,13 @@ class TasksShow extends Component {
 
     return (
       <div>
+        <Link to="/" className="btn btn-primary">Back To Index</Link>
+        <button
+          className="btn btn-dander pull-xs-right"
+          onClick={this.onDeleteClick.bind(this)}
+        >
+          Delete Task
+        </button>
         <h3>{task.name}</h3>
         <h4>{task.description}</h4>
       </div>
@@ -24,8 +40,8 @@ class TasksShow extends Component {
   }
 }
 
-function mapStateToProps({ tasks }, ownProps) {
+function mapStateToProps({ tasks }, ownProps) { // Here, tasks is the value from the RootReducer/application state
   return { task: tasks[ownProps.match.params.id] };
 }
 
-export default connect(mapStateToProps, { fetchTask })(TasksShow);
+export default connect(mapStateToProps, { fetchTask, deleteTask })(TasksShow);
