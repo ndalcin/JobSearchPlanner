@@ -13,8 +13,10 @@ class TasksShow extends Component {
   }
 
   onDeleteClick(){
-    const { id } = this.props.match.params
-    this.props.deleteTask(id); // action creater- deleteTask - needs id of task to send over
+    const { id } = this.props.match.params // action creater- deleteTask - needs id of task to send over
+    this.props.deleteTask(id, () => { // callback function, called once deleteTask action completes, reroute to index page
+      this.props.history.push('/');
+    });
   }
 
   render() {
@@ -28,7 +30,7 @@ class TasksShow extends Component {
       <div>
         <Link to="/" className="btn btn-primary">Back To Index</Link>
         <button
-          className="btn btn-dander pull-xs-right"
+          className="btn btn-danger pull-xs-right"
           onClick={this.onDeleteClick.bind(this)}
         >
           Delete Task

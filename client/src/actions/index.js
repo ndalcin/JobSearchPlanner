@@ -9,6 +9,7 @@ export const RECEIVED_TASKS = 'RECEIVED_TASKS';
 export const CREATE_TASK = 'CREATE_TASK';
 export const FETCH_TASK = 'FETCH_TASK';
 export const RECEIVED_TASK = 'RECEIVED_TASK';
+export const DELETE_TASK = 'DELETE_TASK';
 
 const ROOT_URL = 'http://localhost:3000/api';
 
@@ -52,4 +53,19 @@ export function fetchTask(id) {
         dispatch({ type: RECEIVED_TASK, payload: json.task })
       })
   };
+}
+
+export function deleteTask(id, callback) {
+  return (dispatch) => {
+    dispatch({type: DELETE_TASK, payload: id});
+    fetch(`${ROOT_URL}/tasks/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(id)
+    })
+    .then(() => callback())
+  }
 }
