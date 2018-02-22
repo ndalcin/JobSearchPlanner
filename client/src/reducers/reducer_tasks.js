@@ -6,7 +6,7 @@ export default function(state = {}, action) {
     case FETCH_TASK:
       return { ...state }
     case RECEIVED_TASK:
-      return { ...state, [action.payload.id]: [action.payload][0]}
+      return { ...state, [action.payload.id]: [action.payload][0]} // easier to add in when state is an object (compared to an array)
     case FETCH_TASKS:
       return { ...state }
     case RECEIVED_TASKS:

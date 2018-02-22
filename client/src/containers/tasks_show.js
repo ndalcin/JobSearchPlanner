@@ -42,8 +42,8 @@ class TasksShow extends Component {
   }
 }
 
-function mapStateToProps({ tasks }, ownProps) { // Here, tasks is the value from the RootReducer/application state
-  return { task: tasks[ownProps.match.params.id] };
+function mapStateToProps({ tasks }, ownProps) { // ownProps looks at a component's own properties that have been passed to it from some other component
+  return { task: tasks[ownProps.match.params.id] }; // Here, tasks is the value from the RootReducer/application state
 }
 
 export default connect(mapStateToProps, { fetchTask, deleteTask })(TasksShow);
