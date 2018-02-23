@@ -27,7 +27,20 @@ class TasksNew extends Component {
   }
   // touched state occurs when the field has been focused on and then tabbed away
 
-  onSubmit(values) {    
+  renderNotesField(field){
+    return (
+      <div className="form-group">
+        <input
+          placeholder="Notes(optional)"
+          className="form-control"
+          type="textarea"
+          {...field.input}
+        />
+      </div>
+    )
+  }
+
+  onSubmit(values) {
     this.props.createTask(values, () => {
       this.props.history.push('/');
     });
@@ -36,23 +49,35 @@ class TasksNew extends Component {
   render() {
     // handleSubmit is a function from redux-form
     const { handleSubmit } = this.props;
-
+    // {onSubmit is our unique event handler}
     return (
-      // onSubmit is our unique event handler
-      <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-        <Field
-          label="Name"
-          name="name"
-          component={this.renderField}
-        />
-        <Field
-          label="Description"
-          name="description"
-          component={this.renderField}
-        />
-        <button type="submit" className="btn btn-primary">Save</button>
-        <Link to="/" className="btn btn-danger">Cancel</Link>
-      </form>
+      <div className="container">
+        <div className="row">
+          <br />
+          <h3 >Add a new task</h3>
+          <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+            <Field
+              label="Name"
+              name="name"
+              component={this.renderField}
+            />
+            <Field
+              label="Description"
+              name="description"
+              component={this.renderField}
+            />
+            <Field
+              name="notes"
+              component="textarea"
+              placeholder="Optional Notes"
+            />
+            <br />
+            <br />
+            <button type="submit" className="btn btn-primary">Save</button>
+            <Link to="/" className="btn btn-danger">Cancel</Link>
+          </form>
+        </div>
+      </div>
     )
   }
 }

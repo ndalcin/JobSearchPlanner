@@ -15,7 +15,8 @@
     "react-scripts": "1.1.1",
     "redux": "^3.7.2",
     "redux-form": "^6.6.3",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-redux-form-fields": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
