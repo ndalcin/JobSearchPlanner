@@ -4,20 +4,22 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createTask } from '../actions';
 
+
 class TasksNew extends Component {
 
-  renderField(field){
+
+  renderTextField(field){
     //destructuring to pull off meta from field object
-    const { meta } = field;
+    const { input, label, meta } = field;
     const className = `form-group ${meta.touched && meta.error ? 'has-danger': ''}`;
 
     return (
       <div className={className}>
         <input
-          placeholder={field.label}
+          placeholder={label}
           className="form-control"
           type="text"
-          {...field.input}   // autogenerates the event handlers on field
+          {...input}   // autogenerates the event handlers on field
         />
         <div className="text-help">
           {meta.touched ? meta.error : ''}
@@ -25,20 +27,20 @@ class TasksNew extends Component {
       </div>
     )
   }
-  // touched state occurs when the field has been focused on and then tabbed away
-
-  renderNotesField(field){
+  renderTextAreaField(field){
     return (
       <div className="form-group">
-        <input
-          placeholder="Notes(optional)"
+        <textarea
+          placeholder={field.label}
           className="form-control"
           type="textarea"
-          {...field.input}
+          rows="5"
+          {...field.input}   // autogenerates the event handlers on field
         />
       </div>
     )
   }
+  // touched state occurs when the field has been focused on and then tabbed away
 
   onSubmit(values) {
     this.props.createTask(values, () => {
@@ -54,22 +56,22 @@ class TasksNew extends Component {
       <div className="container">
         <div className="row">
           <br />
-          <h3 >Add a new task</h3>
+          <h3>Add a new task</h3>
           <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
             <Field
               label="Name"
               name="name"
-              component={this.renderField}
+              component={this.renderTextField}
             />
             <Field
               label="Description"
               name="description"
-              component={this.renderField}
+              component={this.renderTextField}
             />
             <Field
+              label="Optional Notes"
               name="notes"
-              component="textarea"
-              placeholder="Optional Notes"
+              component={this.renderTextAreaField}
             />
             <br />
             <br />
