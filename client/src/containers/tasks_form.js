@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { createTask, fetchTypes } from '../actions';
-import { fetchTypes } from '../actions';
 
 class TasksForm extends Component {
   constructor(){
@@ -43,7 +43,17 @@ class TasksForm extends Component {
       type_id: ''
     })
   }
+
+
   render() {
+    const { types } = this.props;
+    let typesForSelect;
+    if (types.length !== 0){
+      typesForSelect = types[0].map((type, index) => {
+        return <option key={index} value={type.id}>{type.name}</option>
+      });
+    }
+
     return (
 
       <div className="container">
@@ -78,10 +88,12 @@ class TasksForm extends Component {
             <div className="form-group">
               <select
                 required
+                type="select"
+                name="type_id"
                 className="custom-select"
                 onChange={this.handleOnChange}>
                 <option defaultValue>Select Type</option>
-                {teachers.map(( type,index ) => <option key={ index } value={ type.id }>{ type.name }</option>)}
+                {typesForSelect}
               </select>
             </div>
 
@@ -106,4 +118,14 @@ class TasksForm extends Component {
 
 }
 
-export default TasksForm;
+const mapStateToProps = (state) => {
+  return {
+    types: state.types
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({ fetchTypes, createTask }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TasksForm);
