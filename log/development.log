@@ -4165,3 +4165,312 @@ Processing by Api::TasksController#index as */*
 Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:54:41 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.15ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-23 21:55:42 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.62ms)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:55:47 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.34ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `type' for #<Task:0x007fe160254ab0>
+Did you mean?  type_id):
+  
+app/controllers/api/tasks_controller.rb:8:in `index'
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:56:04 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.88ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `type' for #<Task:0x007fe161c2bf38>
+Did you mean?  type_id):
+  
+app/controllers/api/tasks_controller.rb:8:in `index'
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:56:14 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.98ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `type' for #<Task:0x007fe15f188ec0>
+Did you mean?  type_id):
+  
+app/controllers/api/tasks_controller.rb:8:in `index'
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:56:27 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.32ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `type' for #<Task:0x007fe161a33f50>
+Did you mean?  type_id):
+  
+app/controllers/api/tasks_controller.rb:8:in `index'
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:59:45 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.08ms)
+Completed 200 OK in 70ms (Views: 58.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:59:49 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.9ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-23 21:59:52 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (0.9ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:59:53 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 21:59:58 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.11ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 22:00:00 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.88ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 22:00:04 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.3ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 22:00:06 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.24ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 22:00:08 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.72ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-23 22:02:17 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.17ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tasks/8" for 127.0.0.1 at 2018-02-24 07:19:59 -0500
+Processing by Api::TasksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.56ms)
+Completed 200 OK in 82ms (Views: 15.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:20:03 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.36ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:21:46 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.67ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:22:08 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.64ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/tasks/8" for 127.0.0.1 at 2018-02-24 07:22:17 -0500
+Processing by Api::TasksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.53ms)
+Completed 200 OK in 22ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/tasks/8" for 127.0.0.1 at 2018-02-24 07:29:27 -0500
+Processing by Api::TasksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.5ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/tasks/8" for 127.0.0.1 at 2018-02-24 07:30:14 -0500
+Processing by Api::TasksController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.77ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:30:16 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (7.83ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:30:31 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (2.03ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:30:45 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (3.77ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:31:05 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.71ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:35:33 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.36ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:39:23 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (2.44ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:42:18 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (2.05ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:42:22 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.6ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:44:59 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (3.66ms)
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:45:34 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (1.52ms)
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:46:05 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.6ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (0.77ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-24 07:46:47 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+No serializer found for resource: #<Type id: 1, name: "blogging">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Type::ActiveRecord_Relation (0.61ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-24 07:47:28 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"Testing", "description"=>"testing 123", "notes"=>"setting date for tomorrow, testing", "date"=>"2018-02-25T05:00:00.000Z", "type_id"=>"5", "task"=>{"name"=>"Testing", "date"=>"2018-02-25T05:00:00.000Z", "description"=>"testing 123", "type_id"=>"5", "notes"=>"setting date for tomorrow, testing"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "date", "description", "type_id", "created_at", "updated_at", "notes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Testing"], ["date", "2018-02-25 05:00:00"], ["description", "testing 123"], ["type_id", 5], ["created_at", "2018-02-24 12:48:44.602783"], ["updated_at", "2018-02-24 12:48:44.602783"], ["notes", "setting date for tomorrow, testing"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 79131ms (ActiveRecord: 9.5ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/tasks_controller.rb:23:in `create'
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-24 07:48:47 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (39.39ms)
+Completed 200 OK in 107ms (Views: 100.5ms | ActiveRecord: 2.6ms)
+
+
