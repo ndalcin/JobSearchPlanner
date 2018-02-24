@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Calendar from 'react-calendar';
 import { createTask, fetchTypes } from '../actions';
 
 class TasksForm extends Component {
@@ -14,7 +15,7 @@ class TasksForm extends Component {
       name: '',
       description: '',
       notes: '',
-      date: '',
+      date: new Date(),
       type_id: ''
     }
   }
@@ -30,6 +31,10 @@ class TasksForm extends Component {
     });
   }
 
+  handleDateChange = date => {
+    this.setState({ date })
+  }
+
   handleOnSubmit = (e) => {
     e.preventDefault();
     this.props.createTask( this.state, () => {
@@ -39,7 +44,7 @@ class TasksForm extends Component {
       name: '',
       description: '',
       notes: '',
-      date: '',
+      date: new Date(),
       type_id: ''
     })
   }
@@ -82,6 +87,13 @@ class TasksForm extends Component {
                   onChange={this.handleOnChange}
                   value={ this.state.description }
                   required
+              />
+            </div>
+
+            <div className="form-group">
+              <Calendar
+                onChange={this.handleDateChange}
+                value={this.state.date}
               />
             </div>
 
