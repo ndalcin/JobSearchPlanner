@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm, change } from 'redux-form'; //We use the change to dispatch the own props of the redux-form component to resetDateField
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createTask } from '../actions';
-
+import moment from 'moment';
+import DatePicker from 'react-datepicker';
 
 class TasksNew extends Component {
 
@@ -27,6 +28,8 @@ class TasksNew extends Component {
       </div>
     )
   }
+  // touched state occurs when the field has been focused on and then tabbed away
+
   renderTextAreaField(field){
     return (
       <div className="form-group">
@@ -40,7 +43,16 @@ class TasksNew extends Component {
       </div>
     )
   }
-  // touched state occurs when the field has been focused on and then tabbed away
+
+  renderDatePicker({ input, label, meta: { touched, error } }) {
+    return (
+        <DatePicker
+          {...input}
+          className="form-control"
+
+        />
+    );
+  }
 
   onSubmit(values) {
     this.props.createTask(values, () => {
@@ -54,7 +66,7 @@ class TasksNew extends Component {
     // {onSubmit is our unique event handler}
     return (
       <div className="container">
-        <div className="row">
+        <div>
           <br />
           <h3>Add a new task</h3>
           <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
@@ -62,6 +74,12 @@ class TasksNew extends Component {
               label="Name"
               name="name"
               component={this.renderTextField}
+            />
+            <Field
+              label="Date"
+              name="date"
+              dateFormat = 'MMM Do YY'
+              component={this.renderDatePicker}
             />
             <Field
               label="Description"
