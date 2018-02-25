@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Calendar from 'react-calendar';
 import { createTask, fetchTypes } from '../actions';
+import Validate from 'react-validate-form';
 
 class TasksForm extends Component {
   constructor(){
@@ -12,11 +13,11 @@ class TasksForm extends Component {
     this.handleOnSubmit = this.handleOnSubmit.bind(this)
     this.handleOnChange = this.handleOnChange.bind(this)
     this.state = {
-      name: '',
-      description: '',
-      notes: '',
-      date: new Date(),
-      type_id: ''
+        name: '',
+        description: '',
+        notes: '',
+        date: new Date(),
+        type_id: ''
     }
   }
 
@@ -41,14 +42,13 @@ class TasksForm extends Component {
       this.props.history.push('/');
     });
     this.setState({
-      name: '',
-      description: '',
-      notes: '',
-      date: new Date(),
-      type_id: ''
+        name: '',
+        description: '',
+        notes: '',
+        date: new Date(),
+        type_id: ''
     })
   }
-
 
   render() {
     const { types } = this.props;
@@ -60,7 +60,6 @@ class TasksForm extends Component {
     }
 
     return (
-
       <div className="container">
         <br />
         <h3>Add a new task</h3>
@@ -120,14 +119,18 @@ class TasksForm extends Component {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary">Save</button>
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={!this.state.formValid}
+              >Save
+            </button>
             <Link to="/" className="btn btn-danger">Cancel</Link>
 
           </form>
       </div>
     );
   }
-
 }
 
 const mapStateToProps = (state) => {
