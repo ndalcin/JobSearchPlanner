@@ -19,18 +19,29 @@
 }
 
 .home-page {
-  background-image: url(https://www.123rf.com/stock-photo/job_search.html);
+  background: url(images/jobsearch-bg.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.main-header {
+  background: url(images/jobsearch-header.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
 form a {
+  margin-left: 5px
+}
+
+a {
   margin-left: 5px
 }
