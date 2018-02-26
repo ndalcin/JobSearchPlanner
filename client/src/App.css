@@ -23,15 +23,14 @@
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: ;
 }
 
 .main-header {
   background: url(images/jobsearch-header.jpg);
-  height: 100%;
+  width: 100%;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
