@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Calendar from 'react-calendar';
 import { createTask, fetchTypes } from '../actions';
-import Validate from 'react-validate-form';
 
 class TasksForm extends Component {
   constructor(){
@@ -122,7 +121,6 @@ class TasksForm extends Component {
             <button
               type="submit"
               className="btn btn-primary"
-              disabled={!this.state.formValid}
               >Save
             </button>
             <Link to="/" className="btn btn-danger">Cancel</Link>
