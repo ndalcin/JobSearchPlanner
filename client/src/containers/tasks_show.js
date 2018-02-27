@@ -41,7 +41,7 @@ class TasksShow extends Component {
           <h3>{task.name}</h3>
           <h4>{task.description}</h4>
           <h4>Date: {task.date_formatted}</h4>
-          <h4>Task ID: {task.type_id}</h4>
+          <h4>Task Type: {task.type.name}</h4>
           {task.notes ?
             <div>
               <h4>Notes:</h4>

@@ -19,19 +19,16 @@
 }
 
 .home-page {
-  background: url(images/jobsearch-bg.jpg);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: ;
+  background: url(images/jobsearch-bg.jpg) no-repeat center center fixed;
+  height: 100vh;
+  background-size: contain;
 }
 
 .main-header {
-  background: url(images/jobsearch-header.jpg);
-  width: 100%;
-  background-position: center;
+  background: url(images/jobsearch-header.jpg) center;
   background-size: contain;
 }
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

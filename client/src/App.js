@@ -16,9 +16,8 @@ class App extends Component {
         <div className="app">
           <Router>
             <div className="routes">
-              <NavBar />
               <Header />
-
+              <NavBar />
               <Switch>
                 <Route exact path="/tasks/new" component={ TasksForm } />
                 <Route path="/tasks/:id" component={ TasksShow } />

@@ -31,7 +31,7 @@ const NavBar = () =>
         background: 'grey'
       }}
     >Add Task</NavLink>
-
+  
   </div>
 
 
