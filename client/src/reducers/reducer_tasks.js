@@ -12,7 +12,7 @@ export default function(state = {}, action) {
     case RECEIVED_TASKS:
       return _.mapKeys(action.payload, 'id') // takes an array and maps the key to 'id' and the remainder of the payload as the value
     case CREATE_TASK:
-      return {...state, [action.payload.id]: [action.payload][0] }
+      return {...state, [action.payload.task.id]: [action.payload.task][0] }
     case DELETE_TASK:
       return _.omit(state, action.payload) // updates the state to omit/leave out the object with the key === action.payload (id)
     default:

@@ -12,20 +12,13 @@ class TasksForm extends Component {
 
     this.handleOnSubmit = this.handleOnSubmit.bind(this)
     this.handleOnChange = this.handleOnChange.bind(this)
-    this.validate = this.validate.bind(this)
+    this.validateType = this.validateType.bind(this)
     this.state = {
-      task: {
-        name: '',
-        description: '',
-        notes: '',
-        date: new Date(),
-        type_id: ''
-      },
-      formErrors: {
-        name: true,
-        description: true,
-        type_id: true
-      }
+      name: '',
+      description: '',
+      notes: '',
+      date: new Date(),
+      type_id: ''
     }
   }
 
@@ -34,55 +27,45 @@ class TasksForm extends Component {
   }
 
   handleOnChange = event => {
-    console.log(event.target.value)
     const { name, value } = event.target
     this.setState({
-      task: {
-        ...this.state.task,
-        [name]: value,
-      }
+      [name]: value
     });
   }
 
   handleDateChange = date => {
-    console.log(date)
-    this.setState({
-      task: {
-        ...this.state.task,
-        date: date,
-      }
-    });
+
+    this.setState({ date });
   }
 
-  validate = (values) => {
-    const errors = {}
-    return errors;
+  validateType = () => {
+    if (this.state.type_id === '') {
+      alert("Please Select A Type")
+      return false
+    } else {
+      return true
+    }
   }
 
   handleOnSubmit = (e) => {
     e.preventDefault();
-    this.props.createTask( this.state, () => {
-      this.props.history.push('/tasks');
-    });
-    this.setState({
-      task: {
+    if (this.validateType()) {
+      this.props.createTask(this.state, () => {
+        this.props.history.push('/tasks')
+      });
+      this.setState({
         name: '',
         description: '',
         notes: '',
         date: new Date(),
         type_id: ''
-      },
-      formErrors: {
-        name: true,
-        description: true,
-        type_id: true
-      }
-    });
+      });
+    }
   }
 
 
   render() {
-
+    // const errors = validate()
     const { types } = this.props;
     let typesForSelect;
     if (types.length !== 0){
@@ -105,8 +88,8 @@ class TasksForm extends Component {
                   name="name"
                   placeholder="Name"
                   onChange={this.handleOnChange}
-                  onBlur={this.validate}
-                  value={ this.state.task.name }
+                  value={ this.state.name }
+                  required
               />
             </div>
             <div className="form-errors">
@@ -120,8 +103,8 @@ class TasksForm extends Component {
                   name="description"
                   placeholder="Description"
                   onChange={this.handleOnChange}
-                  onBlur={this.validate}
-                  value={ this.state.task.description }
+                  value={ this.state.description }
+                  required
               />
             </div>
             <div className="form-errors">
@@ -131,7 +114,7 @@ class TasksForm extends Component {
             <div className="form-group">
               <Calendar
                 onChange={this.handleDateChange}
-                value={this.state.task.date}
+                value={this.state.date}
                 className="form-control"
                 calendarType="US"
               />
@@ -142,7 +125,7 @@ class TasksForm extends Component {
                 required
                 type="select"
                 name="type_id"
-                className="form-control"
+                className="form-select"
                 onChange={this.handleOnChange}>
                 <option defaultValue>Select Type...</option>
                 {typesForSelect}
@@ -158,7 +141,7 @@ class TasksForm extends Component {
                   name="notes"
                   placeholder="Optional Notes"
                   onChange={this.handleOnChange}
-                  value={ this.state.task.notes }
+                  value={ this.state.notes }
               />
             </div>
 

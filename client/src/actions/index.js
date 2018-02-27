@@ -29,7 +29,6 @@ export function fetchTasks() {
 }
 
 export function createTask(values, callback) {
-  console.log(values)
   return (dispatch) => {
     return fetch(`${ROOT_URL}/tasks`, {
       method: 'POST',
@@ -39,13 +38,13 @@ export function createTask(values, callback) {
       },
       body: JSON.stringify(values), //you stringify this bc you can only send strings across webs
     })
-      .then(response => response.json())
-      .then(json => {
-        dispatch({ type: CREATE_TASK, payload: json })
-      })
-      .then(() => callback())
-    };
-  }
+    .then(response => response.json())
+    .then(json => {
+      dispatch({ type: CREATE_TASK, payload: json })
+    })
+    .then(() => callback())
+  };
+}
 
 export function fetchTask(id) {
   return (dispatch) => {
