@@ -15,7 +15,7 @@ class TasksShow extends Component {
   onDeleteClick(){
     const { id } = this.props.match.params // action creater- deleteTask - needs id of task to send over
     this.props.deleteTask(id, () => { // callback function, called once deleteTask action completes, reroute to index page
-      this.props.history.push('/');
+      this.props.history.push('/tasks');
     });
   }
 

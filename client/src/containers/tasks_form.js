@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Calendar from 'react-calendar';
 import { createTask, fetchTypes } from '../actions';
-import {formErrors} from '../components/form_errors';
 
 class TasksForm extends Component {
   constructor(){
@@ -92,9 +91,6 @@ class TasksForm extends Component {
                   required
               />
             </div>
-            <div className="form-errors">
-              {formErrors}
-            </div>
 
             <div className="form-group">
               <input
@@ -106,9 +102,6 @@ class TasksForm extends Component {
                   value={ this.state.description }
                   required
               />
-            </div>
-            <div className="form-errors">
-              {formErrors}
             </div>
 
             <div className="form-group">
@@ -131,9 +124,6 @@ class TasksForm extends Component {
                 {typesForSelect}
               </select>
             </div>
-            <div className="form-errors">
-              {formErrors}
-            </div>
 
             <div className="form-group">
               <textarea
@@ -151,7 +141,6 @@ class TasksForm extends Component {
               >Save
             </button>
             <Link to="/" className="btn btn-danger">Cancel</Link>
-
           </form>
       </div>
     );
