@@ -76,6 +76,7 @@ class TasksForm extends Component {
 
     return (
       <div className="container">
+
         <br />
         <h3>Add a new task</h3>
           <form className="form-group" onSubmit={this.handleOnSubmit}>
