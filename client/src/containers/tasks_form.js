@@ -76,72 +76,95 @@ class TasksForm extends Component {
 
     return (
       <div className="container">
+        <br/>
 
-        <br />
-        <h3>Add a new task</h3>
+        <div className="container">
+          <h3>~Use this form to add a new task~</h3>
+        </div>
+        <br /><br />
           <form className="form-group" onSubmit={this.handleOnSubmit}>
 
-            <div className="form-group">
-              <input
-                  className="form-control"
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  onChange={this.handleOnChange}
-                  value={ this.state.name }
+            <div className="form-group row">
+              <label className="col-sm-3 col-form-label">Name Your Task</label>
+              <div className="col-sm-6">
+                <input
+                    className="form-control"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    onChange={this.handleOnChange}
+                    value={ this.state.name }
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-group row">
+              <label className="col-sm-3 col-form-label">Give a Brief Description</label>
+              <div className="col-sm-6">
+                <input
+                    className="form-control"
+                    type="text"
+                    name="description"
+                    placeholder="Description"
+                    onChange={this.handleOnChange}
+                    value={ this.state.description }
+                    required
+                />
+              </div>
+            </div>
+
+            <div className="form-group row">
+              <label className="col-sm-3 col-form-label">When did you complete this task or when is this task scheduled for?</label>
+              <div className="col-sm-7">
+                <Calendar
+                  onChange={this.handleDateChange}
+                  value={this.state.date}
+                  calendarType="US"
+                />
+              </div>
+            </div>
+            <br />
+            <div className="form-group row">
+              <label className="col-sm-3 col-form-label">What type of task is this?</label>
+              <div className="col-sm-8">
+                <select
                   required
-              />
+                  type="select"
+                  name="type_id"
+                  className="form-select"
+                  onChange={this.handleOnChange}>
+                  <option defaultValue>Select Type...</option>
+                  {typesForSelect}
+                </select>
+              </div>
             </div>
 
-            <div className="form-group">
-              <input
-                  className="form-control"
-                  type="text"
-                  name="description"
-                  placeholder="Description"
-                  onChange={this.handleOnChange}
-                  value={ this.state.description }
-                  required
-              />
+            <div className="form-group row">
+              <label className="col-sm-3 col-form-label">Write any additional information here</label>
+              <div className="col-sm-6">
+                <textarea
+                    className="form-control"
+                    name="notes"
+                    placeholder="Optional Notes"
+                    onChange={this.handleOnChange}
+                    value={ this.state.notes }
+                />
+              </div>
             </div>
-
-            <div className="form-group">
-              <Calendar
-                onChange={this.handleDateChange}
-                value={this.state.date}
-                className="form-control"
-                calendarType="US"
-              />
+            <br />
+            <div className="form-group row">
+              <div className="col-sm-5">
+                <button
+                  type="submit"
+                  className="form-control btn btn-primary"
+                  >Save
+                </button>
+              </div>
+              <div className="col-sm-5">
+                <Link to="/" className="form-control btn btn-danger">Cancel</Link>
+              </div>
             </div>
-
-            <div className="form-group">
-              <select
-                required
-                type="select"
-                name="type_id"
-                className="form-select"
-                onChange={this.handleOnChange}>
-                <option defaultValue>Select Type...</option>
-                {typesForSelect}
-              </select>
-            </div>
-
-            <div className="form-group">
-              <textarea
-                  className="form-control"
-                  name="notes"
-                  placeholder="Optional Notes"
-                  onChange={this.handleOnChange}
-                  value={ this.state.notes }
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="btn btn-primary"
-              >Save
-            </button>
-            <Link to="/" className="btn btn-danger">Cancel</Link>
           </form>
       </div>
     );
