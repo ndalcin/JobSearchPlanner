@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180222155621) do
+ActiveRecord::Schema.define(version: 20180228162908) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20180222155621) do
 
   create_table "types", force: :cascade do |t|
     t.string "name"
+    t.string "description"
   end
 
 end

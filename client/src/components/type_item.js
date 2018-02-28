@@ -18,12 +18,12 @@ class TypeItem extends Component {
       'display': this.state.showDescription ? 'block' : 'none'
     };
     return (
-      <div className="container">
+      <div className="container" >
         <div className="row">
           <button className="btn btn-link" onClick={this.onClick}>{type.id}. {type.name}</button>
         </div>
         <div className="type-description" style={showHide}>
-          {type.id}
+          {type.description}
         </div>
       </div>
     )
