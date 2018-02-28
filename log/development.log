@@ -11020,3 +11020,1253 @@ Processing by Api::TasksController#index as */*
 Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:32:32 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (6.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.58ms)
+Completed 200 OK in 71ms (Views: 53.3ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:33:19 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.89ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:33:36 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (3.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.31ms)
+Completed 200 OK in 63ms (Views: 53.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:33:43 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.43ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:36:13 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (39.96ms)
+Completed 200 OK in 70ms (Views: 60.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:36:15 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.08ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:36:24 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.3ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:36:36 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (6.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (73.22ms)
+Completed 200 OK in 118ms (Views: 100.3ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:36:43 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (1.7ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.98ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:39:38 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.38ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:40:39 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.13ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:43:32 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.01ms)
+Completed 200 OK in 50ms (Views: 41.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:45:04 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (1.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.32ms)
+Completed 200 OK in 25ms (Views: 19.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:45:07 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.43ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:49:21 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.74ms)
+Completed 200 OK in 51ms (Views: 39.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:49:34 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.11ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:49:38 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (39.28ms)
+Completed 200 OK in 81ms (Views: 65.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:50:21 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (1.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.85ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:50:28 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (4.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.42ms)
+Completed 200 OK in 37ms (Views: 32.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:50:39 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (2.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.82ms)
+Completed 200 OK in 67ms (Views: 52.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:50:59 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.49ms)
+Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:51:09 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.16ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:51:15 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.45ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:51:32 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (38.33ms)
+Completed 200 OK in 45ms (Views: 40.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:51:36 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (1.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.58ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:52:16 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (9.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.0ms)
+Completed 200 OK in 45ms (Views: 34.4ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:58:44 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.73ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:59:08 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (4.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (2.6ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (1.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (177.19ms)
+Completed 200 OK in 211ms (Views: 197.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:59:18 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.9ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.18ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 07:59:26 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.88ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:01:11 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.6ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.01ms)
+Completed 200 OK in 51ms (Views: 41.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:01:58 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.63ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:02:42 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.27ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:02:55 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.86ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:04:13 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.9ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.33ms)
+Completed 200 OK in 46ms (Views: 36.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:05:19 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (35.73ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:05:30 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (4.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.7ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.17ms)
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:05:54 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.22ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:06:02 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.16ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:06:07 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.14ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:06:09 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.33ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:06:26 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (1.5ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (3.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (3.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (65.88ms)
+Completed 200 OK in 87ms (Views: 72.8ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:06:32 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (60.31ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:06:35 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.9ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.42ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:06:43 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (7.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (39.46ms)
+Completed 200 OK in 49ms (Views: 40.2ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:09:18 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.74ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:09:20 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.03ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:10:43 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.79ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:10:51 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (3.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.04ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:12:08 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (1.1ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.88ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:12:12 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.09ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:12:54 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.7ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.24ms)
+Completed 200 OK in 63ms (Views: 52.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:14:15 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.87ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:21:53 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.85ms)
+Completed 200 OK in 61ms (Views: 49.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:22:18 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (2.1ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.68ms)
+Completed 200 OK in 66ms (Views: 57.3ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-28 08:22:32 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"where will this appear", "description"=>"on the index page", "notes"=>"blahhhhhh", "date"=>"2018-02-28T13:22:18.903Z", "type_id"=>"7", "task"=>{"name"=>"where will this appear", "date"=>"2018-02-28T13:22:18.903Z", "description"=>"on the index page", "type_id"=>"7", "notes"=>"blahhhhhh"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "date", "description", "type_id", "created_at", "updated_at", "notes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "where will this appear"], ["date", "2018-02-28 13:22:18.903000"], ["description", "on the index page"], ["type_id", 7], ["created_at", "2018-02-28 13:22:32.085663"], ["updated_at", "2018-02-28 13:22:32.085663"], ["notes", "blahhhhhh"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.74ms)
+Completed 200 OK in 44ms (Views: 3.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:23:02 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.92ms)
+Completed 200 OK in 46ms (Views: 37.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:26:15 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.71ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:26:18 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.06ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-28 08:26:24 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"work", "description"=>"work", "notes"=>"", "date"=>"2018-02-28T13:26:18.563Z", "type_id"=>"1", "task"=>{"name"=>"work", "date"=>"2018-02-28T13:26:18.563Z", "description"=>"work", "type_id"=>"1", "notes"=>""}}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mType Load (4.5ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "date", "description", "type_id", "created_at", "updated_at", "notes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "work"], ["date", "2018-02-28 13:26:18.563000"], ["description", "work"], ["type_id", 1], ["created_at", "2018-02-28 13:26:24.402610"], ["updated_at", "2018-02-28 13:26:24.402610"], ["notes", ""]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.16ms)
+Completed 200 OK in 45ms (Views: 4.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:27:31 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.98ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:28:36 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.39ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:28:55 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (43.73ms)
+Completed 200 OK in 82ms (Views: 71.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:29:04 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.66ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/tasks" for 127.0.0.1 at 2018-02-28 08:29:11 -0500
+Processing by Api::TasksController#create as */*
+  Parameters: {"name"=>"tes", "description"=>"123", "notes"=>"", "date"=>"2018-02-28T13:29:04.341Z", "type_id"=>"2", "task"=>{"name"=>"tes", "date"=>"2018-02-28T13:29:04.341Z", "description"=>"123", "type_id"=>"2", "notes"=>""}}
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "date", "description", "type_id", "created_at", "updated_at", "notes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "tes"], ["date", "2018-02-28 13:29:04.341000"], ["description", "123"], ["type_id", 2], ["created_at", "2018-02-28 13:29:11.632488"], ["updated_at", "2018-02-28 13:29:11.632488"], ["notes", ""]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.7ms)
+Completed 200 OK in 15ms (Views: 1.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:29:11 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.19ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/api/tasks/30" for 127.0.0.1 at 2018-02-28 08:29:34 -0500
+Processing by Api::TasksController#destroy as */*
+  Parameters: {"_json"=>"30", "id"=>"30", "task"=>{}}
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 18ms (Views: 0.2ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:29:34 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.29ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/api/tasks/29" for 127.0.0.1 at 2018-02-28 08:29:37 -0500
+Processing by Api::TasksController#destroy as */*
+  Parameters: {"_json"=>"29", "id"=>"29", "task"=>{}}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 29]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 9ms (Views: 0.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:29:37 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.99ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/api/tasks/28" for 127.0.0.1 at 2018-02-28 08:29:40 -0500
+Processing by Api::TasksController#destroy as */*
+  Parameters: {"_json"=>"28", "id"=>"28", "task"=>{}}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 204 No Content in 4ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:29:40 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.04ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:30:11 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:30:50 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.06ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:31:10 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.81ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:36:00 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.01ms)
+Completed 200 OK in 51ms (Views: 43.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:36:52 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.36ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:37:22 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.02ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:37:52 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (41.6ms)
+Completed 200 OK in 71ms (Views: 58.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:40:41 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.94ms)
+Completed 200 OK in 44ms (Views: 35.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:41:04 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.21ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:41:11 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.53ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:41:37 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.83ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:42:12 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.72ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:44:37 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.7ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.07ms)
+Completed 200 OK in 48ms (Views: 38.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:45:05 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.0ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:45:15 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.17ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:45:31 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.09ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:47:45 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.53ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:47:55 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.9ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:48:03 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.48ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:50:37 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.57ms)
+Completed 200 OK in 57ms (Views: 49.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:51:20 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.57ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:51:24 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.03ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:51:47 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.53ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:52:30 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.53ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:53:39 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.77ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:53:49 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.24ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/types" for 127.0.0.1 at 2018-02-28 08:54:19 -0500
+Processing by Api::TypesController#index as */*
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 1]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 2]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 3]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 4]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 5]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 6]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 7]]
+[active_model_serializers]   [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."type_id" = ?[0m  [["type_id", 8]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.53ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 08:54:21 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.81ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 09:03:53 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (2.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.41ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 09:04:15 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.38ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 09:06:10 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.48ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 09:06:29 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.77ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/tasks" for 127.0.0.1 at 2018-02-28 09:06:40 -0500
+Processing by Api::TasksController#index as */*
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Type Load (0.0ms)[0m  [1m[34mSELECT  "types".* FROM "types" WHERE "types"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.83ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.8ms)
+
+

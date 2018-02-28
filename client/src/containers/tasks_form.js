@@ -79,7 +79,7 @@ class TasksForm extends Component {
         <br/>
 
         <div className="container">
-          <h3>~Use this form to add a new task~</h3>
+          <h3 className="form-header">~Add a new task~</h3>
         </div>
         <br /><br />
           <form className="form-group" onSubmit={this.handleOnSubmit}>
@@ -162,7 +162,7 @@ class TasksForm extends Component {
                 </button>
               </div>
               <div className="col-sm-5">
-                <Link to="/" className="form-control btn btn-danger">Cancel</Link>
+                <Link to="/tasks" className="form-control btn btn-danger">Cancel</Link>
               </div>
             </div>
           </form>

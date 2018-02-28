@@ -16,6 +16,15 @@ const HomeNavBar = ({ showHeader }) =>
     >Home</NavLink>
 
     <NavLink
+      to="/about"
+      exact
+      className="btn btn-info"
+      activeStyle={{
+        background: 'grey'
+      }}
+    >About</NavLink>
+
+    <NavLink
       to="/tasks"
       exact
       className="btn btn-info"
