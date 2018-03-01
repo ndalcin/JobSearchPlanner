@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const About = () => {
   return (
@@ -14,7 +16,7 @@ const About = () => {
       </p>
       <p>
       This app was built for fellow students to track the progress of their job search.
-      <a href='/types'>Click here</a> for a detailed explanation each of the job search related task types.</p>
+      <Link to='/types'>Click here</Link> for a detailed explanation each of the job search related task types.</p>
       <p>Happy Hunting!!!
       </p>
       <img alt="" src='https://media.giphy.com/media/fQZX2aoRC1Tqw/giphy.gif' />

@@ -5,6 +5,7 @@ class TypeItem extends Component {
     super();
     this.state = {
       showDescription: false
+
     }
   }
 
@@ -18,16 +19,18 @@ class TypeItem extends Component {
       'display': this.state.showDescription ? 'block' : 'none'
     };
     return (
-      <div className="container" >
-        <div className="row">
-          <button className="btn btn-link" onClick={this.onClick}>{type.id}. {type.name}</button>
+
+      <div className="type-box container">
+        <div className="col-sm-4 type-items">
+          <button className="btn btn-link" onClick={this.onClick}>{type.name}</button>
         </div>
-        <div className="type-description" style={showHide}>
+        <div className="col-sm-8 type-description" style={showHide}>
           {type.description}
         </div>
       </div>
     )
   }
 }
+
 
 export default TypeItem;
