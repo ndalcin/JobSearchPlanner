@@ -3,7 +3,7 @@ import { FETCH_TASK, RECEIVED_TASK, FETCH_TASKS, RECEIVED_TASKS, DELETE_TASK, CR
 
 export default function(state = {}, action) {
   switch (action.type) {
-    case FETCH_TASK:
+    case FETCH_TASK: //not really doing anything in my app, but could be
       return { ...state }
     case RECEIVED_TASK:
       return { ...state, [action.payload.id]: [action.payload][0]} // easier to add in when state is an object (compared to an array)
@@ -20,5 +20,4 @@ export default function(state = {}, action) {
   }
 }
 
-//benefits to using an object for application state:
-//
+//we modify the state in the individual reducers

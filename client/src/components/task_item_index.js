@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TaskItem = ({ task }) => {
+const TaskItemIndex = ({ task }) => {
   const { name, id, description, type } = task;
     if (!type){
       return (
@@ -25,6 +25,6 @@ const TaskItem = ({ task }) => {
     }
 }
 
-export default TaskItem;
+export default TaskItemIndex;
 
 // build some type of onClick to pass to props here -> onClick, go to individual task view

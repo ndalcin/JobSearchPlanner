@@ -20,8 +20,8 @@ const ROOT_URL = 'http://localhost:3000/api';
 export function fetchTasks() {
   return (dispatch) => {
     dispatch({type: FETCH_TASKS});
-    fetch(`${ROOT_URL}/tasks`)
-      .then(response => response.json())
+    fetch(`${ROOT_URL}/tasks`)  //fetch returns a response OBJECT(meta data). gives info about the response(success, error)
+      .then(response => response.json()) // response is where you do error handling, response.json()= translating the body into json code
       .then(json => {
         dispatch({ type: RECEIVED_TASKS, payload: json })
       })
