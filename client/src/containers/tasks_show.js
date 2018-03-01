@@ -27,7 +27,7 @@ class TasksShow extends Component {
     }
 
     return (
-      <div>
+      <div className="container task-item-container">
         <TaskItemShow onClick={this.onDeleteClick} key={task.id} task={task} />
       </div>
     );
