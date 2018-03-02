@@ -1,9 +1,10 @@
 # JobSearch Task Planner
 
 An application to keep track of your job search related tasks by type.
+Check out a demo [here](https://vimeo.com/258205455)
 
-![alt text](https://imgur.com/bedF6gQ)
-![alt text](https://imgur.com/iT7ZG5y)
+![types](/client/src/images/typesIndexSS.png)
+![form](/client/src/images/formSS.png)
 
 ## Installation and Usage
 
