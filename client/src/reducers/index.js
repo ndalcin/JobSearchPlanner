@@ -8,3 +8,6 @@ const RootReducer = combineReducers({
 });
 
 export default RootReducer;
+
+//Individual reducers are combined into a single rootReducer to create 
+//the discrete properties of the state.

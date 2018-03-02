@@ -20,4 +20,7 @@ export default function(state = {}, action) {
   }
 }
 
-//we modify the state in the individual reducers
+// In Redux, all reducers get called regardless of the action,
+// so inside each one you have to return the original state if the action is not applicable.
+// Reducers are “pure functions”.
+// They should not have any side-effects nor mutate the state — they must return a modified copy.
