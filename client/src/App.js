@@ -20,8 +20,8 @@ class App extends Component {
           <Router>
             <div className="routes">
               <Switch>
-                <Route exact path="/" component={HomeNavBar} />
-                <Route path="/" component={NavBar} />
+                <Route exact path="/" component={HomeNavBar} /> //hacky way to display the homenavbar (no header) on the index page only
+                <Route path="/" component={NavBar} /> //and the regular navbar(with header) on all other pages that begin with /
               </Switch>
               <Switch>
                 <Route exact path="/" component={Home} />

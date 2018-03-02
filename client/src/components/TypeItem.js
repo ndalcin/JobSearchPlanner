@@ -22,7 +22,7 @@ class TypeItem extends Component {
 
       <div className="type-box container">
         <div className="col-sm-4 type-items">
-          <button className="btn btn-secondary" onClick={this.onClick}>{type.name}</button>
+          <button className="btn btn-outline-info" onClick={this.onClick}>{type.name}</button>
         </div>
         <div className="col-sm-8 type-description" style={showHide}>
           {type.description}
