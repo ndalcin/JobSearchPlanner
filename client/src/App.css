@@ -21,13 +21,13 @@
 }
 
 .home-page {
-  background: url(images/jobsearch-bg.jpg) no-repeat center center fixed;
+  background: url(images/pic.jpeg) no-repeat center center fixed;
   height: 85vh;
   background-size: cover;
 }
 
 .main-header {
-  background: url(images/jobsearch-header.jpg) center;
+  background: url(images/Job-search.jpg) center center;
   background-size: contain;
 }
 
@@ -96,4 +96,17 @@ a {
 
 .task-item-card a {
   margin-left: 0;
+}
+
+#task-item-title {
+  text-decoration: underline;
+}
+
+
+#type-link {
+  font-size: 15px;
+}
+
+.footer {
+  text-align: right;
 }

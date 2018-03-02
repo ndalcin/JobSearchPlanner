@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchTypes } from '../actions/index';
-import TypeItem from '../components/type_item';
+import TypeItem from '../components/TypeItem';
 
 class TypesIndex extends Component {
   componentDidMount = () => {

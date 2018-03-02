@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
 import { fetchTasks } from '../actions/index';
-import TaskItemIndex from '../components/task_item_index';
+import TaskItemIndex from '../components/TaskItemIndex';
 
 class TasksIndex extends Component {
   componentDidMount = () => {

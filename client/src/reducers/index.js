@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import TasksReducer from './reducer_tasks';
-import TypesReducer from './reducer_types';
+import TasksReducer from './reducerTasks';
+import TypesReducer from './reducerTypes';
 
 const RootReducer = combineReducers({
   types: TypesReducer,

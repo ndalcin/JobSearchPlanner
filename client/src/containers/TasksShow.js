@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchTask, deleteTask } from '../actions';
-import TaskItemShow from '../components/task_item_show';
+import TaskItemShow from '../components/TaskItemShow';
 
 class TasksShow extends Component {
 
